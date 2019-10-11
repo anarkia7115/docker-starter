@@ -1,5 +1,7 @@
 # start worker
 docker run \
+ --network=spark_nw \
+ -h spark-worker \
  -v $(pwd)/spark-defaults-worker.conf:/opt/spark/conf/spark-defaults.conf \
  --name spark-worker \
  -d swr.cn-north-4.myhuaweicloud.com/gaojx/spark-on-k8s:2.3.3 \

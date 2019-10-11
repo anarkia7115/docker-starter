@@ -1,6 +1,7 @@
 # start master
 docker run \
- -h spark-master
+ --network=spark_nw \
+ -h spark-master \
  -v $(pwd)/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf \
  --name spark-master \
  -d swr.cn-north-4.myhuaweicloud.com/gaojx/spark-on-k8s:2.3.3 \
