@@ -1,1 +1,1 @@
-export KFK_HOST="172.18.0.1"
+export BIONER_HOST="kafka"
